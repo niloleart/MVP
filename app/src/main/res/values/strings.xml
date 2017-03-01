@@ -8,4 +8,7 @@
     <string name="wiki">Wiki</string>
     <string name="comics">Comics</string>
     <string name="events">Esdeveniments</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="mail">noleart@opentrends.net</string>
 </resources>
