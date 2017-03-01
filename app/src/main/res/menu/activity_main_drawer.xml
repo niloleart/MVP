@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Favorits">
+        <menu>
+        <item
+            android:id="@+id/nav_fav_hero"
+            android:icon="@drawable/iron_man"
+            android:title="Herois" />
+        <item
+            android:id="@+id/nav_fav_gallery"
+            android:icon="@drawable/thor"
+            android:title="Galeria" />
+        </menu>
+    </item>
+
+    <item android:title="Altres">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/hammer_thor"
+                android:title="Configuració" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/cap_america"
+                android:title="Sobre nosaltres..." />
+        </menu>
+    </item>
+</menu>
