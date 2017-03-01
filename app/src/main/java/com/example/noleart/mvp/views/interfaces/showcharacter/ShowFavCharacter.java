@@ -92,7 +92,7 @@ public class ShowFavCharacter extends BaseActivity {
 
         mFavCharacter = gson.fromJson(json_fav, Favourite.class);
 
-        super.initDetailToolbar();
+        super.initFavToolbar();
         setTitle(mFavCharacter.getName());
 
         String urlImage = mFavCharacter.getThumbnail();

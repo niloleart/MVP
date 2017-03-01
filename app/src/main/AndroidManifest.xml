@@ -32,6 +32,11 @@
             android:label="ShowFavCharacter"
             android:theme="@style/AppTheme.NoActionBar"
             android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".views.interfaces.menu.MenuAbout"
+            android:label="MenuAbout"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

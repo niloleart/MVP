@@ -26,6 +26,7 @@ import com.example.noleart.mvp.control.control.adapters.CharactersRecyclerViewAd
 import com.example.noleart.mvp.control.control.callbacks.CharacterListCallback;
 import com.example.noleart.mvp.views.interfaces.BaseActivity;
 import com.example.noleart.mvp.views.interfaces.interfaces.MainContract;
+import com.example.noleart.mvp.views.interfaces.menu.MenuAbout;
 import com.example.noleart.mvp.views.interfaces.showcharacter.ShowCharacter;
 import com.example.noleart.mvp.views.interfaces.showcharacter.ShowFavCharacter;
 import com.google.gson.Gson;
@@ -71,6 +72,7 @@ public class MainActivity extends BaseActivity implements MainContract.View, Cha
 
         Toolbar toolbar = super.initToolbar();
         setTitle("Inici");
+
         initDrawer(toolbar);
 
 
@@ -180,6 +182,7 @@ public class MainActivity extends BaseActivity implements MainContract.View, Cha
         }
 
     }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -215,19 +218,16 @@ public class MainActivity extends BaseActivity implements MainContract.View, Cha
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        /*if (id == R.id.nav_camera) {
-            Toast.makeText(this,"Camera pressed",Toast.LENGTH_SHORT).show();
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_fav_hero) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_fav_gallery) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_settings) {
 
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
-        }*/
+        } else if (id == R.id.nav_about) {
+            Intent i = new Intent(getBaseContext(),MenuAbout.class);
+            startActivity(i);
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

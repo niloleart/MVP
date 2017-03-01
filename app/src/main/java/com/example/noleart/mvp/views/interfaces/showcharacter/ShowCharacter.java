@@ -83,15 +83,12 @@ public class ShowCharacter extends BaseActivity {
         // This instantiates DBFlow
         FlowManager.init(new FlowConfig.Builder(this).build());
 
-        super.initDetailToolbar();
-
-
         Gson gson = new Gson();
         String json_norm = getIntent().getExtras().getString(CHARACTER);
 
         mCharacter = gson.fromJson(json_norm, Characters.class);
 
-        super.initDetailToolbar();
+        super.initFavToolbar();
         setTitle(mCharacter.getName());
 
         String urlImage = mCharacter.getThumbnail().getPath() + "." + mCharacter.getThumbnail().getExtension();
