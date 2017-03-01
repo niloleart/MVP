@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Marvel Hero Finder</string>
+    <string name="content_main_title">Busca el teu superheroi</string>
+    <string name="search_hero">Escriu les lletres inicials</string>
+    <string name="links">Links</string>
+    <string name="resources">Recursos</string>
+    <string name="detail">Detall</string>
+    <string name="wiki">Wiki</string>
+    <string name="comics">Comics</string>
+    <string name="events">Esdeveniments</string>
+</resources>
